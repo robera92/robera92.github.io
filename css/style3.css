@@ -1,0 +1,89 @@
+header{
+    height: 500px;
+    background: #fff url('../images/stars.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+.header-text{
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+header h1{
+    color: #fff;
+    text-align: center;
+}
+
+header p{
+    color: #fff;
+    text-align: right;
+}
+
+.header-buttons{
+    float: right;
+    padding: 30px;
+}
+
+.header-buttons a{
+    margin: 5px;
+    background-color: red;
+    color:#fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main{
+    width: 60%;
+    margin: 0 auto;
+}
+
+main h2{
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 325px;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 3px;
+    text-align: left;
+  }
+  
+  .button-container{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .button-container button{
+    background-color: #fff;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px;
+    color: blue;
+  }
+
+  .caption-gallery, .tags-gallery{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+  section img {
+    max-width: 325px;
+  }
+
+  .tags-gallery img{
+    margin: 20px;
+  }

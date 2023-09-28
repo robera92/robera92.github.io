@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Naujienu portalas</h1>
+        <h2>Uzklausa</h2>
+            <form method="POST">
+                <fieldset>
+                    <input id="vardas" required name="vardas" type="text" value="" placeholder="Vardas">    
+                </fieldset>
+                <fieldset>
+                    <input id="email" name="email" type="email" placeholder="El pastas">
+                </fieldset>
+                <fieldset>
+                    <label>Data</label>
+                    <input id="date" name="date" type="date">
+                </fieldset>
+                <fieldset>
+                    <label>Spalva</label>
+                    <input id="spalva" name="spalva" type="color">
+                </fieldset>
+                <fieldset>
+                    <select>
+                        <option selected disabled>Departamentas</option>
+                        <option>IT</option>
+                        <option>DEVS</option>
+                        <option>FIN</option>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <textarea rows="20" cols="100" placeholder="Jusu tekstas"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label>Sutinku</label>
+                    <input type="checkbox">
+                </fieldset>
+                <fieldset>
+                    <button type="submit">Siusti</button>
+                </fieldset>
+            </form>
+    </body>
+</html>
