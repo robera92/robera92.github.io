@@ -6,14 +6,16 @@ body{
     width: 80%;
     background-color: beige;
     margin: 0 auto;
+    height: 600px;
+    position: relative;
 }
 
 
 .container div{
+    position: absolute;
     width: 200px;
     height: 200px;
     margin: 10px auto;
-     vertical-align: middle;
 }
 
 h2{
@@ -25,13 +27,30 @@ h2{
 
 .container div:nth-child(1){
     background: red;
+    top:0;
+    left:0;
 }
 .container div:nth-child(2){
     background: blue;
+    top:0;
+    right:0;
 }
 .container div:nth-child(3){
     background: green;
+    bottom: 0;
+    left: 0;
 }
 .container div:nth-child(4){
     background: yellow;
+    bottom: 0;
+    right: 0;
+}
+
+.container div:nth-child(5){
+    background: aqua;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
