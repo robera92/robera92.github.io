@@ -36,10 +36,11 @@ nav ul li a{
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1.6px; 
+    text-decoration: none;
 }
 
 nav ul li:first-child a{
-    color: #414880; 
+    color: #414880;
 }
 
 nav ul li:last-child a{
@@ -115,6 +116,7 @@ form{
 .form-image{
     width: 50%;
     float: left;
+    margin-top: 100px;
 }
 
 fieldset{
@@ -164,10 +166,14 @@ fieldset button{
     letter-spacing: 1.6px; 
 }
 
-input::placeholder {
-    color: red;
-    font-size: 1.2em;
-    font-style: italic;
+input::placeholder, textarea::placeholder {
+    color: #C5C5C5;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px; 
   }
   
   
