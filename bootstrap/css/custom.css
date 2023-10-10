@@ -1,0 +1,17 @@
+.first-row .col{
+    background-color: aqua;
+}
+
+.second-row .col{
+    background-color: purple;
+}
+
+.thrid-row .col{
+    background-color: pink;
+}
+
+.col{
+    border: 1px black solid;
+    border-radius: 10px;
+    margin: 10px;
+}
