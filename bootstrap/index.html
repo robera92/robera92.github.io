@@ -4,25 +4,146 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/custom.css">
     <title>Bootstrap demo</title>
   </head>
   <body>
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col-md-6">
-                <h1 class="text-uppercase mb-3">About us</h1>
-                <p class="text-primary-emphasis">We aim to offer Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                <h2 class="fst-italic my-5">Have more questions or need additional help? Fell free to contact us!</h2>
-                <p class="text-primary-emphasis">Phone number:</p>
-                <p class="text-primary-emphasis">Email:</p>
-            </div>
-            <div class="col-md-6">
-                <img src="images/Screenshot from 2023-10-10 15-47-13.png" class="img-fluid">
-            </div>
+
+    <div class="container-fluid">
+      <nav class="navbar">
+        <div class="container d-flex justify-content-sm-between">
+          <button type="button" class="btn nav-btn"><i class="bi bi-envelope-fill"></i></button>
+          <a href="#">
+            <img src="images/ButtonIconFAB.png" alt="logo" width="80" height="80">
+          </a>
+          <button type="button" class="btn nav-btn"><i class="bi bi-list"></i></button>
         </div>
+      </nav>
+      <header class="container-fluid">
+        <div class="hero-section row d-flex flex-column align-items-center">
+          <div class="col-12">
+            <h1 class="display-5 fw-bold text-center gap-3">Where AI Meets Telehealth & Telemedicine.</h1>
+            <p class="text-center">We're pioneering the future of healthcare with cutting-edge telehealth and telemedicine solution</p>
+            <div class="d-grid gap-2 d-flex flex-column align-items-center">
+              <div class="gap-2 d-flex flex-column align-items-center py-3">
+                <span><i class="bi bi-person"></i> Trusted By 2.5M+</span>
+                <span><i class="bi bi-cpu"></i> AI/ML Technology</span>
+              </div>
+              <button type="button" class="btn btn-dark btn-sm py-2 download-app-btn">Download The App <i class="bi bi-download"></i></button>  
+            </div>
+          </div>
+          <div class="col-12 cover-fill p-5 d-flex justify-content-center">
+            <img src="images/Screen.png" class="img-fluid" alt="Bootstrap Themes" width="522" height="240" loading="lazy">
+          </div>
+        </div>
+      </header>
     </div>
 
+    <div class="container">
+      <section class="mission my-3">
+        <div class="mission-container">
+            <div class="mission-content d-flex flex-column">
+              <div class="row d-flex flex-column ps-3">
+                <div class="col-12 mb-3">
+                  <button class="btn btn-success">Our Mission</button>
+                </div>
+                <div class="col mb-3">
+                  <h2>We make quality telehealth accessible to everyone.</h2>
+                </div>
+                <div class="col mb-3">
+                  <p>Whether you're a patient seeking expert medical advice or a healthcare provider looking to expand your reach, Osler AI has you covered all the way.</p>
+                </div>
+              </div>
+              <div class="row d-flex flex-column">
+                <div class="col flex-row d-inline-flex align-items-center justify-content-center overflow-x-hidden">
+                  <img src="images/Component (1).png" alt="tekstas">
+                  <img src="images/Component (2).png" alt="tekstas">
+                  <img src="images/Component (3).png" alt="tekstas">
+                  <img src="images/Component.png" alt="tekstas">
+                </div>
+                <div class="col flex-row d-inline-flex align-items-center justify-content-center overflow-x-hidden">
+                  <img src="images/Component.png" alt="tekstas">
+                  <img src="images/Component (3).png" alt="tekstas">
+                  <img src="images/Component (2).png" alt="tekstas">
+                  <img src="images/Component (1).png" alt="tekstas">
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+      <section class="stats my-3">
+        <div class="stats-container">
+          <div class="stats-content d-flex align-items-center flex-column">
+            <h2>Our Statistics</h2>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">99,5<span>%</span></h5>
+                <p class="card-text"><i class="bi bi-heart-pulse"></i> Diagnosis Accuracy</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">1.4<span>M</span></h5>
+                <p class="card-text"><i class="bi bi-prescription2"></i> Prescription Filled</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">200<span>K</span></h5>
+                <p class="card-text"><i class="bi bi-clipboard-plus"></i> Doctors Connected</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="services-container">
+          <div class="services-content d-flex flex-column align-items-stretch">
+            <h2>Our Services</h2>
+            <div class="services-frames d-flex flex-column">
+              <div class="service-frame d-flex flex-column align-items-start">
+                <span class="mb-4">01</span>
+                <i class="bi bi-activity p-4 my-4"></i>
+                <h4>Intelligent Virtual Consultations</h4>
+                <p>Our telehealth services provide convenient access to complete healthcare.</p>
+              </div>
+            </div>
+            <div class="services-frames d-flex flex-column">
+              <div class="service-frame d-flex flex-column align-items-start">
+                <span class="mb-4">02</span>
+                <i class="bi bi-calendar-check p-4 my-4"></i>
+                <h4>Intuitive Appointment Booking</h4>
+                <p>We make booking appointments hassle-free for doctors & patients.</p>
+              </div>
+            </div>
+            <div class="services-frames d-flex flex-column">
+              <div class="service-frame d-flex flex-column align-items-start">
+                <span class="mb-4">03</span>
+                <i class="bi bi-activity p-4 my-4"></i>
+                <h4>Intelligent Virtual Consultations</h4>
+                <p>Our telehealth services provide convenient access to complete healthcare.</p>
+              </div>
+            </div>
+            <div class="services-frames d-flex flex-column">
+              <div class="service-frame d-flex flex-column align-items-start">
+                <span class="mb-4">04</span>
+                <i class="bi bi-activity p-4 my-4"></i>
+                <h4>Intelligent Virtual Consultations</h4>
+                <p>Our telehealth services provide convenient access to complete healthcare.</p>
+              </div>
+            </div>
+            <button class="btn btn-dark btn-sm py-2 download-app-btn">See All Services <i class="bi bi-arrow-right-circle-fill"></i></button>
+          </div>
+        </div>
+      </section>
+
+
+
+    </div>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

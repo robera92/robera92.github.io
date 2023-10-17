@@ -1,0 +1,176 @@
+*{
+    font-family: Nunito;
+}
+
+
+.download-app-btn{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.download-app-btn i{
+    margin-left: 16px;
+}
+
+.nav-btn{
+    background-color: #fff;
+    border-radius:  10px;
+}
+
+section{
+    gap: 10px;
+}
+
+.cover-fill{
+    width: 100%;
+    background-image: url('../images/BG.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/* hero section */
+
+.hero-section{
+    gap: 64px;
+}
+
+.hero-section h1{
+    color: #2F3C33;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.hero-section p{
+    color: #647067;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/* Mission section */
+.mission-container{
+    padding: 96px 16px;
+    gap: 10px;
+    border-radius: 96px;
+    background: #2F3C33;
+}
+
+.mission-content{
+    gap: 32px;
+}
+
+.mission-content h2{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+}
+
+.mission-content p{
+    color: #E3E4E3;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+/* stats section */
+.stats-container{
+    padding: 96px 16px;
+    gap: 10px;
+    border-radius: 96px;
+    background: #84CC16;
+}
+
+.stats-content{
+    gap: 32px;
+}
+
+.stats-content h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.stats-content .card{
+    display: flex;
+    padding: 64px 32px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-radius: 64px;
+    background:#FFF;
+}
+
+.stats-content .card .card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card-body h5{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px;
+}
+
+.card-text{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    color: #2F3C33;
+}
+
+.stats-content span{
+    color: #BEF264;
+}
+
+/* services section */
+.services-container{
+    padding: 96px 16px;
+    gap: 10px;
+    border-radius: 96px;
+    background: #F5F5F5;
+}
+.services-content h2{
+    color: #2F3C33;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.services-content{
+    gap: 40px;
+}
+
+.services-frames{
+    gap: 16px;
+}
+
+.service-frame{
+    padding: 32px;
+    border-radius: 56px;
+    background: #FFF;
+}
+
+.service-frame i{
+    border-radius: 30px;
+    background: #ECFCCB;
+}
