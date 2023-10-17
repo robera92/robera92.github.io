@@ -2,6 +2,7 @@
     font-family: Nunito;
 }
 
+/* header */
 
 .download-app-btn{
     width: 100%;
@@ -13,8 +14,9 @@
 }
 
 .nav-btn{
-    background-color: #fff;
-    border-radius:  10px;
+    border-radius: 24px;
+    background: #FFF;
+    box-shadow: 0px 8px 16px 0px rgba(47, 60, 51, 0.05);
 }
 
 section{
@@ -29,13 +31,7 @@ section{
     background-size: cover; 
 }
 
-/* hero section */
-
-.hero-section{
-    gap: 64px;
-}
-
-.hero-section h1{
+header h1{
     color: #2F3C33;
     text-align: center;
     font-size: 36px;
@@ -44,7 +40,7 @@ section{
     line-height: 44px;
 }
 
-.hero-section p{
+header p{
     color: #647067;
     text-align: center;
     font-family: Nunito;
@@ -53,6 +49,23 @@ section{
     font-weight: 400;
     line-height: 160%;
 }
+
+header span{
+    color: #647067;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.top-gradient{
+    height: 237px; 
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%);
+}
+
+/* hero section */
 
 /* Mission section */
 .mission-container{
@@ -173,4 +186,164 @@ section{
 .service-frame i{
     border-radius: 30px;
     background: #ECFCCB;
+}
+/* features section */
+
+section.features{
+    padding: 96px 16px; 
+}
+
+.features h2{
+    color: #2F3C33;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 44px;
+}
+
+.features-content{
+    gap:96px;
+}
+
+.features-container{
+    gap: 48px; 
+}
+
+.features-card{
+    gap: 32px; 
+}
+
+.features-card:first-child .features-logo{
+    border-radius: 118px;
+    background: #84CC16; 
+}
+
+.features-card:nth-child(2) .features-logo{
+    border-radius: 118px;
+    background: #647067; 
+}
+.features-card:nth-child(3) .features-logo{
+    border-radius: 118px;
+    background: #E3E4E3;
+}
+
+.features-frame{
+    gap: 32px;
+}
+
+.features-tag{
+    height: 40px;
+    padding: 10px 16px;
+    border-radius: 15px;
+    border: 1px solid #647067;
+}
+.features-tag span{
+    color: #647067;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.features-description h3{
+    color: #2F3C33;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 38px;
+}
+
+.features-description p{
+    color: #647067;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.features-large-text{
+    color: #2F3C33;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 32px; 
+}
+
+.features-large-text i{
+    color: #F43F5E;
+}
+
+/* footer */
+
+footer{
+    border-radius: 96px 96px 0px 0px;
+    background: #2F3C33; 
+}
+
+.footer-container{
+    padding-top: 100px;
+}
+
+footer p{
+    color: #E3E4E3;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+footer nav ul{
+    list-style-type: none;
+    gap: 48px;
+}
+
+footer nav ul a{
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 56px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer .social-links{
+    list-style: none;
+}
+
+.social-links a{
+    border-radius: 24px;
+    border: 1px solid #FFF;
+    color: #fff;
+}
+
+.app-buttons button{
+    border-radius: 24px;
+    background: #84CC16;
+    height: 64px;
+    padding: 16px 32px; 
+    border: #84CC16;
+    color: #fff;
+}
+
+.app-buttons{
+    gap: 16px; 
+}
+
+.footer-links a{
+    color: #FFF;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
