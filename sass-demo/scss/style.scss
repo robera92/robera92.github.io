@@ -1,0 +1,11 @@
+@import "../bootstrap/scss/bootstrap.scss";
+@import "components/var";
+@import "components/nav";
+@import "components/header";
+@import "components/section";
+@import "components/footer";
+
+// base
+section{
+    margin: 100px 0;
+}

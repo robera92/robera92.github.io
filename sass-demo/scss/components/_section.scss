@@ -1,0 +1,71 @@
+
+.welcome-section{
+
+    h2{
+        color: $primaryTextColor;
+        font-family: $primaryFontFamily;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+    }
+
+    li{
+        color: $primaryTextColor;
+        font-family: $primaryFontFamily;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal; 
+    }
+
+}
+
+.learning-section{
+
+
+    h2{
+        color: $primaryTextColor;
+        font-family: $primaryFontFamily;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+    }
+
+}
+
+
+.subscribe-form-section{
+    background-color: $primaryBackgroundColor;
+    padding: 40px;
+
+        .form-section__input{
+            height: 60px;
+            color: rgba(0, 0, 0, 0.50);
+            font-family: $primaryFontFamily;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal; 
+            border: unset;
+            margin: 0 20px;
+
+            &::placeholder{
+                text-align: center;
+            }
+
+        }
+
+        .form-section__submit{
+            background-color: $ctaButtonColor;
+            color: #fff;
+            font-family: $primaryFontFamily;;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal; 
+        }
+
+
+}

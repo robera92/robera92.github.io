@@ -1,0 +1,25 @@
+footer{
+
+    background-color: $primaryBackgroundColor;
+
+    h3{
+        color: $primaryTextColor;
+        font-family: $primaryFontFamily;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal; 
+    }
+
+    p, ul{
+        color: #6C6C6C;
+        padding-left: 0;
+        font-family: $primaryFontFamily;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        list-style: none;
+    }
+
+}
