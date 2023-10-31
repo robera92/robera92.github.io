@@ -82,11 +82,11 @@ let books = {
 
 
 Object.keys(books).forEach(bookCategory => {
-    console.log(`Kategorija: ${bookCategory} (${bookCategory.length} knygu)`);
+    console.log(`Kategorija: ${bookCategory} (${books[bookCategory].length} knygu)`);
 
     books[bookCategory].forEach(book => {
         console.log('ISBN: ' + book.isbn);
-        let yearReleasedPrint = book.yearReleased == 2023 ? book.yearReleased : book.yearReleased + ' (Nauja knyga)'
+        let yearReleasedPrint = book.yearReleased == 2023 ? book.yearReleased + ' (Nauja knyga)' : book.yearReleased;
         console.log('Leidimas: ' + yearReleasedPrint);
         console.log('Pavadinimas: ' + book.title);
         console.log('Puslapių skaičius: ' + book.pageCount);
