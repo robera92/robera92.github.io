@@ -82,7 +82,7 @@ let books = {
 
 
 Object.keys(books).forEach(bookCategory => {
-    console.log(`Kategorija: ${bookCategory} (${bookCategory.length} knygu)`);        // the name of the current key.
+    console.log(`Kategorija: ${bookCategory} (${bookCategory.length} knygu)`);
 
     books[bookCategory].forEach(book => {
         console.log('ISBN: ' + book.isbn);
@@ -94,6 +94,6 @@ Object.keys(books).forEach(bookCategory => {
         
       });
 
-      console.log('------------ Kategorijos pabaiga ------------');
+      console.log('///////// Kategorijos pabaiga ///////////');
         
   });
