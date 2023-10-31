@@ -1,3 +1,5 @@
+(function () {
+
 let books = {
     grozine:
     [
@@ -78,21 +80,44 @@ let books = {
             pageCount: 256
         }
     ]
-}
+};
+
+
+/* <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Kat pav
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul>
+                        <li>Knygos info</li>
+                    </ul>
+                </div>
+              </div>
+ </div> */
+
 
 
 Object.keys(books).forEach(bookCategory => {
-    console.log(`Kategorija: ${bookCategory} (${books[bookCategory].length} knygu)`);
 
-    books[bookCategory].forEach(book => {
-        console.log('ISBN: ' + book.isbn);
-        let yearReleasedPrint = book.yearReleased == 2023 ? book.yearReleased + ' (Nauja knyga)' : book.yearReleased;
-        console.log('Leidimas: ' + yearReleasedPrint);
-        console.log('Pavadinimas: ' + book.title);
-        console.log('Puslapių skaičius: ' + book.pageCount);
-        console.log('----------------------------------');
-      });
+        createNewAccordionItem(bookCategory);
 
-      console.log('///////// Kategorijos pabaiga ///////////');
-        
   });
+
+
+
+function createNewAccordionItem(item){
+
+    let allBooksAccordion = document.getElementById('allBooksAccordion');
+    let newAccordionItem = document.createElement('div');
+    let accordionDiv = allBooksAccordion.appendChild(newAccordionItem);
+
+    accordionDiv.classList.add("accordion-item");
+
+}
+
+
+
+})();
