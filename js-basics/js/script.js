@@ -111,9 +111,15 @@ Object.keys(books).forEach(bookCategory => {
 function createNewAccordionItem(item){
 
     let allBooksAccordion = document.getElementById('allBooksAccordion');
+
+    // create all required elements here
     let newAccordionItem = document.createElement('div');
+
+
+    // append items here
     let accordionDiv = allBooksAccordion.appendChild(newAccordionItem);
 
+    // add classes or content here
     accordionDiv.classList.add("accordion-item");
 
 }
