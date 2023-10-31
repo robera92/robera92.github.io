@@ -10416,6 +10416,9 @@ footer {
     font-weight: 400;
     line-height: normal;
     list-style: none; }
+  footer .useful-links {
+    list-style-type: disc;
+    padding-left: 1em; }
 
 section {
   margin: 100px 0; }
