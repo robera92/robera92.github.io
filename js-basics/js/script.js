@@ -83,46 +83,66 @@ let books = {
 };
 
 
-/* <div class="accordion-item">
+{/* <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                   Kat pav
                 </button>
               </h2>
-              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div id="collapseThree" class="accordion-collapse collapse">
                 <div class="accordion-body">
                     <ul>
                         <li>Knygos info</li>
                     </ul>
                 </div>
-              </div>
- </div> */
+             </div>
+ </div> */}
 
 
 
-Object.keys(books).forEach(bookCategory => {
-
-        createNewAccordionItem(bookCategory);
-
-  });
+for(const bookCategory in books){
+    createNewAccordionItem(bookCategory);
+}
 
 
 
-function createNewAccordionItem(item){
+function createNewAccordionItem(bookCategory){
 
     let allBooksAccordion = document.getElementById('allBooksAccordion');
 
     // create all required elements here
     let newAccordionItem = document.createElement('div');
-
+    let newH2Item = document.createElement('h2');
+    let newAccordionCollapseItem = document.createElement('div');
+    let newButtonItem = document.createElement('button');
 
     // append items here
     let accordionDiv = allBooksAccordion.appendChild(newAccordionItem);
-
+    let h2Item = accordionDiv.appendChild(newH2Item);
+    let buttonItem = h2Item.appendChild(newButtonItem);
+    let accordionCollapseItem = accordionDiv.appendChild(newAccordionCollapseItem);
+    
+    
     // add classes or content here
     accordionDiv.classList.add("accordion-item");
-
+    h2Item.classList.add("accordion-header");
+    buttonItem.classList.add("accordion-button","collapsed");
+    setAttributes(buttonItem,
+         {'type': 'button', 'data-bs-toggle': 'collapse', 'data-bs-target': '#collapse-'+bookCategory,
+         'aria-expanded': 'false', 'aria-controls': 'collapseThree'}
+     );
+    buttonItem.textContent = 'Kategorija: ' + bookCategory + ' (Viso knygu: '+ books[bookCategory].length + ')';
+    // <div id="collapseThree" class="accordion-collapse collapse">
+    setAttributes(accordionCollapseItem, {'id': '#collapse-'+bookCategory}  );
+    accordionCollapseItem.classList.add("accordion-collapse", "collapse");
 }
+
+
+function setAttributes(el, attrs) {
+    for(var key in attrs) {
+      el.setAttribute(key, attrs[key]);
+    }
+  }
 
 
 
