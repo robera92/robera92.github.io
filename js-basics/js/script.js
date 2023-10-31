@@ -91,7 +91,6 @@ Object.keys(books).forEach(bookCategory => {
         console.log('Pavadinimas: ' + book.title);
         console.log('Puslapių skaičius: ' + book.pageCount);
         console.log('----------------------------------');
-        
       });
 
       console.log('///////// Kategorijos pabaiga ///////////');
