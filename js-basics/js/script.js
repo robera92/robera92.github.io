@@ -83,28 +83,13 @@ let books = {
 };
 
 
-{/* <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Kat pav
-                </button>
-              </h2>
-              <div id="collapseThree" class="accordion-collapse collapse">
-                <div class="accordion-body">
-                    <ul>
-                        <li>Knygos info</li>
-                    </ul>
-                </div>
-             </div>
- </div> */}
-
-
 
 for(const bookCategory in books){
     createNewAccordionItem(bookCategory);
 }
 
 
+// define functions
 
 function createNewAccordionItem(bookCategory){
 
@@ -115,13 +100,14 @@ function createNewAccordionItem(bookCategory){
     let newH2Item = document.createElement('h2');
     let newAccordionCollapseItem = document.createElement('div');
     let newButtonItem = document.createElement('button');
+    let newAccordionBodyItem = document.createElement('div');
 
     // append items here
     let accordionDiv = allBooksAccordion.appendChild(newAccordionItem);
     let h2Item = accordionDiv.appendChild(newH2Item);
     let buttonItem = h2Item.appendChild(newButtonItem);
     let accordionCollapseItem = accordionDiv.appendChild(newAccordionCollapseItem);
-    
+    let accordionBodyItem = accordionCollapseItem.appendChild(newAccordionBodyItem);
     
     // add classes or content here
     accordionDiv.classList.add("accordion-item");
@@ -133,9 +119,58 @@ function createNewAccordionItem(bookCategory){
      );
     buttonItem.textContent = 'Kategorija: ' + bookCategory + ' (Viso knygu: '+ books[bookCategory].length + ')';
     // <div id="collapseThree" class="accordion-collapse collapse">
-    setAttributes(accordionCollapseItem, {'id': '#collapse-'+bookCategory}  );
+    setAttributes(accordionCollapseItem, {'id': 'collapse-'+bookCategory}  );
     accordionCollapseItem.classList.add("accordion-collapse", "collapse");
+
+    accordionBodyItem.classList.add("accordion-body");
+
+    setAccordionBodyContent(accordionBodyItem, bookCategory);
+
 }
+
+
+function setAccordionBodyContent(element, booksKey){
+
+    // create all required elements here
+    let newUnorderedListItem = document.createElement('ul');
+    let newListItem = document.createElement('li');
+    let newLineItem = document.createElement('hr');
+
+    books[booksKey].forEach((bookElement) =>  {
+
+        for (const property in bookElement) {
+
+            var unorderedListItem = newUnorderedListItem.appendChild(newListItem.cloneNode());
+            
+            let bookElementText = bookElement[property];
+
+                switch (property) {
+                    case 'isbn':
+                        bookElementText = 'ISBN: ' + bookElementText;
+                    break;
+                    case 'yearReleased':
+                        bookElementText = bookElementText == '2023' ? bookElementText + ' (Nauja knyga)' : bookElementText;
+                    break;
+                    case 'title':
+                        bookElementText = 'Pavadinimas: ' + bookElementText;
+                    break;
+                    case 'pageCount':
+                        bookElementText = 'Puslapiai: ' + bookElementText;
+                    break;
+                }
+            
+              unorderedListItem.textContent = bookElementText;
+
+            }
+        
+            unorderedListItem.appendChild(newLineItem.cloneNode());
+            
+    });
+
+    element.appendChild(newUnorderedListItem);
+
+}
+
 
 
 function setAttributes(el, attrs) {
