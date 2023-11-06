@@ -179,6 +179,42 @@ function setAttributes(el, attrs) {
     }
   }
 
+// testinam
+
+// todo list app
+// inputas ivedimui darbo pavadinima
+// mygtukas pridet
+// ivestas darbas pridededamas i ul lista
+// mygtukas pasalinti pasalinimas paskutinis
+
+let todoList = document.querySelector('ul.todo-list');
+
+document.querySelector('form.todo').addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let todoInput = document.querySelector('input[name="todo-value"]');
+    
+    let todoListItem = document.createElement('li');
+
+    if(todoInput.value.length > 0){
+        todoListItem.textContent = todoInput.value;
+        todoList.appendChild(todoListItem);
+        todoInput.value = '';
+        todoInput.focus();
+    }
+
+});
+
+
+
+document.querySelector('form.todo').addEventListener('reset', (e) => {
+    e.preventDefault();
+
+    if(todoList.lastChild !== null){
+        todoList.lastChild.remove();
+    }
+
+});
 
 
 })();

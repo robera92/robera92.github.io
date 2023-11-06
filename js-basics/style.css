@@ -1,0 +1,10 @@
+.col{
+    background-color: tomato;
+    height: 200px;
+    flex-grow: 1;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
