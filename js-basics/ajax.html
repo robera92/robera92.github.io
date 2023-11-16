@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <h1>Filmo paieska</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control m-3" placeholder="Filmo pavadinimas">
+                <button type="submit" class="btn btn-primary">Ieskoti</button>
+            </div>
+        </form>
+        <hr>
+        <section>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th>Pavadinimas</th>
+                        <th>Trukme</th>
+                        <th>Rezisierius</th>
+                        <th>Metai</th>
+                        <th>IMDB</th>
+                        <th>Kita</th>
+                        <th>Poster</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="title"></td>
+                        <td class="time"></td>
+                        <td class="director"></td>
+                        <td class="year"></td>
+                        <td class="imdb"></td>
+                        <td class="other"></td>
+                        <td class="poster">
+                            <img src="" width="200">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="places">
+            <input type="text" list="places" placeholder="Iveskite vietove">
+            <datalist id="places"></datalist>
+
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/ajax.js"></script>
+</body>
+</html>
